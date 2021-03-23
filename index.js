@@ -1,16 +1,16 @@
 const { Collection, Client } = require("discord.js");
 const mongoose = require("mongoose");
 const guild = require("./data/guilds");
-const events = require("./global/events.js");
 const message = require("./global/message.js");
 const config = require("./global/config.json");
 const bot = new Client();
 bot.commands = new Collection();
 bot.aliases = new Collection();
 require("./global/functions")(bot);
-events.ready(bot);
 message.message(bot);
-events.guildAdd(bot);
+bot.on("ready", async () => {
+  bot.user.setActivity(`@${bot.user.username}`, { type: "WATCHING" });
+});
 bot.once("ready", async () => {
   console.log(`These are guilds that I'm in. (${bot.guilds.cache.size})`);
   bot.guilds.cache.forEach(async (element) => {
@@ -33,4 +33,5 @@ bot.once("ready", async () => {
     }
   );
 });
+bot.login(config.discord.token);
 module.exports = bot;
