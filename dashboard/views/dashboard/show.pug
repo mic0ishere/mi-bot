@@ -1,0 +1,40 @@
+doctype
+html(lang='en')
+  head
+    include ../includes/header.pug
+    
+    script(src='/js/guild.js', defer)
+    script(defer).
+      let module = '#{module}';
+
+    script(src='/js/sidebar.js', defer)
+    link(rel='stylesheet', href='/css/sidebar.css')
+  body
+    include ../includes/sidebar.pug
+
+    #sidebarExtension.bg-light
+      header.text-center.pt-4
+        .large-icon.bg-white.round
+          if guild.icon
+            img.round(src=guild.iconURL({ dynamic: true, size: 128 }), alt=guild.name)
+          else
+            p.abbr #{guild.nameAcronym}
+        h4#overview.cursor-pointer.pt-2 #{guild.name}
+      .tabs.navbar-nav
+        a#overview.category Modules
+        a#general #[i.fas.fa-star.pr-1.text-muted] General
+        a#botBehaviour #[i.fas.fa-user-cog.pr-1.text-muted] Bot Behaviour
+        a#lobby #[i.fas.fa-door-open.pr-1.text-muted] Lobby
+        a#logs #[i.fas.fa-user-secret.pr-1.text-muted] Logging
+        a#moderation #[i.fas.fa-gavel.pr-1.text-muted] Moderation
+        a#tickets #[i.fas.fa-ticket-alt.pr-1.text-muted] Tickets
+
+    include ../includes/navbar.pug
+    
+    include modules/overview
+    include modules/general
+    include modules/logs
+    include modules/lobby
+    include modules/moderation
+    include modules/tickets
+    include modules/bot

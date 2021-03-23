@@ -1,0 +1,40 @@
+{
+  "name": "mi-bot",
+  "version": "1.0.0",
+  "description": "Here should be the description",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mic0ishere/mi-bot.git"
+  },
+  "keywords": [
+    "shitty-code",
+    "old-bot",
+    "discord-bot",
+    "discord"
+  ],
+  "author": "mic0",
+  "license": "ODbL-1.0",
+  "bugs": {
+    "url": "https://github.com/mic0ishere/mi-bot/issues"
+  },
+  "homepage": "https://github.com/mic0ishere/mi-bot#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "@lavacord/discord.js": "0.0.7",
+    "child_process": "^1.0.2",
+    "common-tags": "^1.8.0",
+    "cookies": "^0.8.0",
+    "disco-oauth": "^4.2.7",
+    "discord.js": "^12.2.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.9.25",
+    "opusscript": "0.0.7",
+    "pug": "^3.0.0",
+    "superagent": "^5.3.1",
+    "urban": "^0.3.2"
+  }
+}

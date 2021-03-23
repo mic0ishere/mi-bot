@@ -1,0 +1,29 @@
+#search {
+  max-width: 300px;
+}
+#search + button {
+  height: 64px;
+}
+
+li {
+  cursor: pointer;
+}
+
+.commands li {
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid lightgray !important;
+  text-transform: none;
+}
+.list-group-item {
+  text-transform: capitalize;
+}
+.activeAccordion, .accordionButton:hover {
+  background-color: rgba(221, 221, 221, 0.7)
+}
+.accordionContent {
+  padding: 0px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}

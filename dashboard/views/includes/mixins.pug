@@ -1,0 +1,14 @@
+mixin category(category)
+  li.list-group-item(id=category.name.replace(" ", "-")) #[i(class=category.icon)] #{category.name}
+
+mixin command(command)
+  li.list-group-item.accordionButton(id=command.name + 'Command', class=command.category.replace(" ", "-")) #{command.name}
+    .accordionContent
+      strong Aliases: 
+      | #{command.aliases == "" ? "None" : command.aliases}
+      br
+      strong Usage: 
+      | #{command.name} #{command.usage}
+      br
+      strong Description: 
+      | #{command.description == "" ? "No description provided" : command.description}

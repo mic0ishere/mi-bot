@@ -1,0 +1,40 @@
+body {
+  background-color: #212529;
+}
+
+/* utils */
+.uppercase {
+  text-transform: uppercase;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.rounded {
+  border-radius: 5px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.shadow {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.9), 0 1px 2px 0 rgba(0, 0, 0, 0.94);
+}
+
+.row img {
+  width: 64px;
+}
+
+/* tweaks */
+a:focus {
+  outline: none;
+}
+a {
+  color: rgba(255, 255, 255, 0.7) !important;
+  text-decoration: none !important;
+}
+h1, h2, h3, h4, h5, h6, p {
+  color: rgba(255, 255, 255, 0.7);
+}

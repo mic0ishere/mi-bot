@@ -1,0 +1,31 @@
+.icon {
+  border: 2px solid  rgba(255, 255, 255, 0.4) !important;
+  font-size: x-large;
+
+  height: 68px;
+  width: 68px;  
+}
+
+.abbr {
+  width: 68px;
+  height: 68px;
+  padding-top: 13.5px;
+}
+body {
+  background-color: #212529;
+}
+.border {
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+.nav-tabs {
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+.dropdown-divider {
+  border-color: #16191b !important;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+  background-color: #16191b;
+}
+.dropdown-menu {
+  background-color: #212529be !important;
+}
