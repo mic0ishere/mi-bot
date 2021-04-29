@@ -10,14 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/mic0ishere/mi-bot.git"
   },
-  "keywords": [
-    "shitty-code",
-    "old-bot",
-    "discord-bot",
-    "discord"
-  ],
+  "keywords": [],
   "author": "mic0",
-  "license": "ODbL-1.0",
+  "license": "MPL-2.0",
   "bugs": {
     "url": "https://github.com/mic0ishere/mi-bot/issues"
   },

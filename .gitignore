@@ -1,3 +1,4 @@
 /node_modules
 /lavalink/logs
 /global/config.json
+/package-lock.json
